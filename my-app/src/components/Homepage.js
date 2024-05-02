@@ -4,6 +4,7 @@ import SearchBar from './PropertySearch';
 import PropertyCard2 from './PropertyCard2';
 import DropdownMenu from './Dropdown';
 import properties from '../data.json';
+import HeroImage from '../HeroImage';
 
 function Homepage() {
   const [bedroomFilter, setBedroomFilter] = useState("");
@@ -99,6 +100,8 @@ function Homepage() {
   return (
     <div className='mainContainer'>
       <h2>Home Page</h2>
+      
+        <HeroImage />
       <p>Welcome to Property23! Explore our property listings.</p>
 
       {/* SearchBar component */}
