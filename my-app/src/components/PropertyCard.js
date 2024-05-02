@@ -1,10 +1,14 @@
 import React from 'react';
 
 
+
 function PropertyCard({ property }) {
+  // Dynamically import image based on the imageUrl property
+  const image = require(`../houseStockPhotos/${property.imageUrl}`);
+
   return (
     <div className="card" style={{ width: '18rem', margin: '1rem' }}>
-      <img src={property.imageUrl} className="card-img-top" alt={`View of ${property.address}`} />
+      <img src={image.default} className="card-img-top" alt={`View of ${property.address}`} />
       <div className="card-body">
         <h5 className="card-title">{property.propertyName}</h5>
         <p className="card-text">{property.description}</p>
