@@ -14,7 +14,7 @@ How to get the a local copy of this project for testing and/or developmental pur
 ### Installing
 
 1. Clone the repo
-```
+```https://github.com/RP231013/week2or3ReactGroupChallenge.git
 ```
 2. Open the project
 
