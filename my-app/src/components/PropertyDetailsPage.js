@@ -1,27 +1,20 @@
-import React from "react";
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import properties from '../data.json';
 
-function PropertyDetailsPage({ location }) {
-  // Extract property data from location state
-  const {
-    id,
-    propertyName,
-    location: propertyLocation,
-    description,
-    bedrooms,
-    bathrooms,
-    garages,
-  } = location.state.property;
+function PropertyDetailsPage() {
+  const { id } = useParams();
+  const property = properties.find(p => p.id === parseInt(id));
 
   return (
     <div>
-      <h2>{propertyName}</h2>
-      <p>{description}</p>
-      <ul>
-        <li>Location: {propertyLocation}</li>
-        <li>Bedrooms: {bedrooms}</li>
-        <li>Bathrooms: {bathrooms}</li>
-        <li>Garages: {garages}</li>
-      </ul>
+      <h1>{property.propertyName}</h1>
+      <img src={property.imageUrl} alt={`View of ${property.address}`} style={{ width: '100%' }} />
+      <p>{property.description}</p>
+      <p>Location: {property.location}</p>
+      <p>Bedrooms: {property.bedrooms}</p>
+      <p>Bathrooms: {property.bathrooms}</p>
+      <p>Garages: {property.garages}</p>
     </div>
   );
 }

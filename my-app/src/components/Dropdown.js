@@ -1,12 +1,13 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { DropdownButton, Dropdown } from 'react-bootstrap';
 
-function DropdownMenu({ title, items }) {
+function DropdownMenu({ title, items, onSelectItem }) {
     return (
-        <DropdownButton id="dropdown-basic-button" title={title}>
+        <DropdownButton id={`dropdown-${title}`} title={title}>
             {items.map((item, index) => (
-                <Dropdown.Item key={index} href={`#${item.toLowerCase()}`}>{item}</Dropdown.Item>
+                <Dropdown.Item key={index} onClick={() => onSelectItem(item)}>
+                    {item}
+                </Dropdown.Item>
             ))}
         </DropdownButton>
     );
