@@ -1,0 +1,19 @@
+.input-group {
+    width: 100%;
+    max-width: 400px; 
+    margin: 0 auto;
+  }
+  
+  .input-group-append {
+    display: flex;
+  }
+  
+  .btn-primary {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-control {
+    border-radius: 0;
+  }
+  

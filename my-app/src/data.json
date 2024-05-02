@@ -7,7 +7,7 @@
       "bedrooms": 4,
       "bathrooms": 3,
       "garages": 2,
-      "imageUrl": "./housesStockPhotos/house1.png"
+      "imageUrl": "../houseStockPhotos/house1.png"
     },
     {
       "id": 2,
@@ -17,7 +17,7 @@
       "bedrooms": 2,
       "bathrooms": 2,
       "garages": 1,
-      "imageUrl": "./housesStockPhotos/house2.png"
+      "imageUrl": "../houseStockPhotos/house2.png"
     },
     {
       "id": 3,
@@ -27,7 +27,7 @@
       "bedrooms": 3,
       "bathrooms": 2,
       "garages": 1,
-      "imageUrl": "./housesStockPhotos/house3.png"
+      "imageUrl": "../houseStockPhotos/house3.png"
     },
     {
       "id": 4,
@@ -37,7 +37,7 @@
       "bedrooms": 4,
       "bathrooms": 4,
       "garages": 2,
-      "imageUrl": "./housesStockPhotos/house4.png"
+      "imageUrl": "../houseStockPhotos/house4.png"
     },
     {
       "id": 5,
@@ -47,7 +47,7 @@
       "bedrooms": 5,
       "bathrooms": 3,
       "garages": 3,
-      "imageUrl": "./housesStockPhotos/house5.png"
+      "imageUrl": "../houseStockPhotos/house5.png"
     },
     {
       "id": 6,
@@ -57,7 +57,7 @@
       "bedrooms": 3,
       "bathrooms": 2,
       "garages": 1,
-      "imageUrl": "./housesStockPhotos/house6.png"
+      "imageUrl": "../houseStockPhotos/house6.png"
     }
   ]
   
