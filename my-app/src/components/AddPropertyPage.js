@@ -22,7 +22,7 @@ function App() {
       <div className="mt-4">
         <div className="row">
           <div className="col-md-4">
-            <input type="text" className="form-control mb-2" placeholder="Loaction" />
+            <input type="text" className="form-control mb-2" placeholder="Location" />
             <button className="btn btn-primary"
                     onDragOver={(e) => handleDragOver(e)}
                     onDrop={(e) => handleDrop(e, 'button1')}>
