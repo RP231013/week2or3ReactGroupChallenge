@@ -1,40 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const PropertySearch = ({ properties }) => {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [filteredProperties, setFilteredProperties] = useState(properties);
-
-  const handleSearchInputChange = (event) => {
-    const query = event.target.value;
-    setSearchQuery(query);
-    const filtered = properties.filter(item =>
-      item.propertyName.toLowerCase().includes(query.toLowerCase()) ||
-      item.location.toLowerCase().includes(query.toLowerCase())
-    );
-    setFilteredProperties(filtered);
-  };
-
+const SearchBar = () => {
   return (
-    <div>
-      <input
-        type="text"
-        placeholder="Search by property name or location"
-        value={searchQuery}
-        onChange={handleSearchInputChange}
-      />
-      <ul>
-        {filteredProperties.map(property => (
-          <li key={property.id}>
-            <h2>{property.propertyName}</h2>
-            <p>{property.location}</p>
-            <p>{property.description}</p>
-            <p>Bedrooms: {property.bedrooms}, Bathrooms: {property.bathrooms}, Garages: {property.garages}</p>
-            <img src={property.imageUrl} alt={property.propertyName} />
-          </li>
-        ))}
-      </ul>
+    <div className="container mt-4">
+      <div className="input-group">
+        <input
+          type="text"
+          className="form-control"
+          placeholder="Search..."
+          aria-label="Search"
+          aria-describedby="basic-addon2"
+        />
+        <div className="input-group-append">
+          <button className="btn btn-primary" type="button">Search</button>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default PropertySearch;
+export default SearchBar;
