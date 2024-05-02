@@ -1,53 +1,62 @@
-import React, { useState } from 'react';
+import React from "react";
 
 function App() {
-  const [droppedImages, setDroppedImages] = useState({});
+  const handleDragStart = (e, content) => {
+    e.dataTransfer.setData("text/plain", content);
+  };
 
   const handleDragOver = (e) => {
     e.preventDefault();
   };
 
-  const handleDrop = (e, buttonId) => {
-    e.preventDefault();
-    const imageURL = e.dataTransfer.getData('text/plain');
-    setDroppedImages({
-      ...droppedImages,
-      [buttonId]: imageURL,
-    });
+  const handleDrop = (e, droppedContent) => {
+    const draggedContent = e.dataTransfer.getData("text/plain");
+    console.log("Dragged Content:", draggedContent);
+    console.log("Dropped Content:", droppedContent);
+    // Perform any actions you want with draggedContent and droppedContent
   };
 
   return (
     <div className="container mt-4">
-      <h2>Drag and Drop Images into Buttons</h2>
-      <div className="mt-4">
-        <div className="row">
-          <div className="col-md-4">
-            <input type="text" className="form-control mb-2" placeholder="Loaction" />
-            <button className="btn btn-primary"
-                    onDragOver={(e) => handleDragOver(e)}
-                    onDrop={(e) => handleDrop(e, 'button1')}>
-              {droppedImages['button1'] ? <img src={droppedImages['button1']} alt="Dropped Image" /> : 'Drop Here'}
-            </button>
-          </div>
-          <div className="col-md-4">
-            <input type="text" className="form-control mb-2" placeholder="House Number" />
-            <button className="btn btn-secondary"
-                    onDragOver={(e) => handleDragOver(e)}
-                    onDrop={(e) => handleDrop(e, 'button2')}>
-            </button>
-          </div>
-          <div className="col-md-4">
-            <input type="text" className="form-control mb-2" placeholder="Price" />
-            <button className="btn btn-success"
-                    onDragOver={(e) => handleDragOver(e)}
-                    onDrop={(e) => handleDrop(e, 'button3')}>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div className="mt-4">
-        
-      </div>
+      <h2>Drag and Drop Images</h2>
+      <ul className="list-group">
+        <li
+          className="list-group-item"
+          draggable
+          onDragStart={(e) => handleDragStart(e, "Item 1")}
+          onDragOver={(e) => handleDragOver(e)}
+          onDrop={(e) => handleDrop(e, "Item 1")}
+        >
+          Front House View
+        </li>
+        <li
+          className="list-group-item"
+          draggable
+          onDragStart={(e) => handleDragStart(e, "Item 2")}
+          onDragOver={(e) => handleDragOver(e)}
+          onDrop={(e) => handleDrop(e, "Item 2")}
+        >
+          Back House/Backyard View
+        </li>
+        <li
+          className="list-group-item"
+          draggable
+          onDragStart={(e) => handleDragStart(e, "Item 3")}
+          onDragOver={(e) => handleDragOver(e)}
+          onDrop={(e) => handleDrop(e, "Item 3")}
+        >
+          Living room
+        </li>
+        <li
+          className="list-group-item"
+          draggable
+          onDragStart={(e) => handleDragStart(e, "Item 4")}
+          onDragOver={(e) => handleDragOver(e)}
+          onDrop={(e) => handleDrop(e, "Item 4")}
+        >
+          Kitchen
+        </li>
+      </ul>
     </div>
   );
 }
