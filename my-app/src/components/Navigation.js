@@ -1,10 +1,11 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import './Navigation.css';
 
 const Navigation = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" className='mainNav'>
       <Navbar.Brand href="#home"><h1>Property23</h1></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
