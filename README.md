@@ -4,8 +4,6 @@ Welcome to Property23 - a project showcasing property listings with filtering op
 
 [Watch the demo video here](https://drive.google.com/drive/folders/1mCGj-uX0ICwL3b-EUq8n-bFb-asP_3z6)
 
-[View the website here]()
-
 ## About The Project
 
 Explore a wide range of properties with Property23! Our platform offers an extensive collection of property listings, allowing users to browse, filter, and find their dream property with ease.
