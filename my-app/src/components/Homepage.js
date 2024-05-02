@@ -6,8 +6,8 @@ import DropdownMenu from './Dropdown';
 import properties from '../data.json';
 
 function Homepage() {
-  const dropdownItems1 = ["Option 1", "Option 2", "Option 3"];
-  const dropdownItems2 = ["Choice A", "Choice B", "Choice C"];
+  const dropdownItems1 = ["Studio", "One Bedroom", "Two Bedrooms +"];
+  const dropdownItems2 = ["Half Bath", "One Bathroom", "Two Bathrooms +"];
 
   return (
     <div className='mainContainer'>
@@ -22,11 +22,11 @@ function Homepage() {
         <div className="row justify-content-center">
           <div className="col-md-4">
             {/* First dropdown */}
-            <DropdownMenu title="Dropdown 1" items={dropdownItems1} />
+            <DropdownMenu title="Bedrooms" items={dropdownItems1} />
           </div>
           <div className="col-md-4">
             {/* Second dropdown */}
-            <DropdownMenu title="Dropdown 2" items={dropdownItems2} />
+            <DropdownMenu title="Bathrooms" items={dropdownItems2} />
           </div>
         </div>
       </div>
