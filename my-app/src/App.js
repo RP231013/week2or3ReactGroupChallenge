@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
@@ -7,6 +8,25 @@ function App() {
   return (
     <div className="App">
     </div>
+=======
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navigation from './components/Navigation';
+import HomePage from './components/Homepage';
+import AddPropertyPage from './components/AddPropertyPage';
+
+function App() {
+  return (
+    <Router>
+      <div>
+        <Navigation />
+        <Routes>
+          <Route path="/add-property" element={<AddPropertyPage />} />
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </div>
+    </Router>
+>>>>>>> a74140ea3af90647498876d52b379810c61ddcda
   );
 }
 

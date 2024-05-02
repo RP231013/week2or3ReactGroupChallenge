@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "propertyName": "Sunny Side Villa",
+      "location": "123 Oakwood Lane, Sunnyvale, CA",
+      "description": "A beautiful and spacious villa with a breathtaking garden view. Perfect for families looking for a peaceful retreat.",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "garages": 2,
+      "imageUrl": "./housesStockPhotos/house1.png"
+    },
+    {
+      "id": 2,
+      "propertyName": "Modern Downtown Flat",
+      "location": "2347 Apartment Way, San Francisco, CA",
+      "description": "Modern, chic apartment in the heart of the city. Ideal for those who love urban living.",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "garages": 1,
+      "imageUrl": "./housesStockPhotos/house2.png"
+    },
+    {
+      "id": 3,
+      "propertyName": "Lakeside Cottage",
+      "location": "58 Lake Road, Traverse City, MI",
+      "description": "Cozy cottage right next to the lake. Perfect for weekend getaways or a quiet writer's nook.",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "garages": 1,
+      "imageUrl": "./housesStockPhotos/house3.png"
+    },
+    {
+      "id": 4,
+      "propertyName": "Suburban Dream",
+      "location": "442 Suburbia Drive, Raleigh, NC",
+      "description": "A charming house in a friendly neighborhood. Complete with a backyard pool.",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "garages": 2,
+      "imageUrl": "./housesStockPhotos/house4.png"
+    },
+    {
+      "id": 5,
+      "propertyName": "Mountain Retreat",
+      "location": "9302 Mountain View Rd, Boulder, CO",
+      "description": "Escape to the mountains in this stunning retreat that offers panoramic views and serene solitude.",
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "garages": 3,
+      "imageUrl": "./housesStockPhotos/house5.png"
+    },
+    {
+      "id": 6,
+      "propertyName": "Beachfront Bungalow",
+      "location": "100 Ocean Avenue, Miami Beach, FL",
+      "description": "Beautiful bungalow right on the beach. Wake up to the sound of waves every morning.",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "garages": 1,
+      "imageUrl": "./housesStockPhotos/house6.png"
+    }
+  ]
+  
