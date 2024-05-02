@@ -21,8 +21,9 @@ function PropertyCard2({ property }) {
           <li className="list-group-item">Garages: {property.garages}</li>
         </ul>
         <Link to={`/property/${property.id}`} className="btn btn-primary mt-3">
-          View Details
-        </Link>
+  View Details
+</Link>
+
       </div>
     </div>
   );
