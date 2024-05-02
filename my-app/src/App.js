@@ -11,7 +11,7 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/add-property" element={<AddPropertyPage />} />
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<Homepage />} />
         </Routes>
       </div>
     </Router>
