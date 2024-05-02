@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="container mt-4">
-      <h2>Drag and Drop Images into Buttons</h2>
+      <h2>Drag and Drop Images </h2>
       <div className="mt-4">
         <div className="row">
           <div className="col-md-4">
