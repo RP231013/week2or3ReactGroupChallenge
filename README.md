@@ -4,10 +4,6 @@ Welcome to Property23 - a project showcasing property listings with filtering op
 
 [Watch the demo video here](https://drive.google.com/drive/folders/1mCGj-uX0ICwL3b-EUq8n-bFb-asP_3z6)
 
-
-
-![QR code]()
-
 [View the website here]()
 
 ## About The Project
@@ -20,8 +16,7 @@ How to get the a local copy of this project for testing and/or developmental pur
 ### Installing
 
 1. Clone the repo
-```sh
-git clone https://github.com/RP231013/DV100T4_FINAL_THEBROADCASTERS
+```
 ```
 2. Open the project
 
