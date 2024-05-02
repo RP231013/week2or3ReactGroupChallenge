@@ -1,14 +1,15 @@
 import React from 'react';
 
-
-
-function PropertyCard({ property }) {
-  // Dynamically import image based on the imageUrl property
-  const image = require(`../houseStockPhotos/${property.imageUrl}`);
-
+function PropertyCard2({ property }) {
   return (
     <div className="card" style={{ width: '18rem', margin: '1rem' }}>
-      <img src={image.default} className="card-img-top" alt={`View of ${property.address}`} />
+      <img 
+        src={property.imageUrl} 
+        className="card-img-top" 
+        alt={`View of ${property.address}`} 
+        style={{ width: '100%', height: '200px', objectFit: 'cover' }}  // Ensures the image covers the area without distortion
+      />
+
       <div className="card-body">
         <h5 className="card-title">{property.propertyName}</h5>
         <p className="card-text">{property.description}</p>
@@ -24,4 +25,4 @@ function PropertyCard({ property }) {
   );
 }
 
-export default PropertyCard;
+export default PropertyCard2;

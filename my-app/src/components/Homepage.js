@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Homepage.css';
 import SearchBar from './PropertySearch';
-import PropertyCard from './PropertyCard';
+import PropertyCard2 from './PropertyCard2';
 import DropdownMenu from './Dropdown';
 import properties from '../data.json';
 
