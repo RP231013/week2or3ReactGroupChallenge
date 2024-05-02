@@ -1,7 +1,7 @@
 import React from 'react';
 import './Homepage.css';
 import SearchBar from './PropertySearch';
-import PropertyCard from './PropertyCard';
+import PropertyCard2 from './PropertyCard2';
 import DropdownMenu from './Dropdown';
 import properties from '../data.json';
 
@@ -35,7 +35,7 @@ function Homepage() {
         <h2 className="my-4">Featured Properties</h2>
         <div className="d-flex flex-wrap justify-content-center">
           {properties.map(property => (
-            <PropertyCard key={property.id} property={property} />
+            <PropertyCard2 key={property.id} property={property} />
           ))}
         </div>
       </div>
