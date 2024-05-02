@@ -1,63 +1,68 @@
 [
-    {
-      "id": 1,
-      "propertyName": "Sunny Side Villa",
-      "location": "123 Oakwood Lane, Sunnyvale, CA",
-      "description": "A beautiful and spacious villa with a breathtaking garden view. Perfect for families looking for a peaceful retreat.",
-      "bedrooms": 1,
-      "bathrooms": 1,
-      "garages": 2,
-      "imageUrl": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=3165&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-      "id": 2,
-      "propertyName": "Modern Downtown Flat",
-      "location": "2347 Apartment Way, San Francisco, CA",
-      "description": "Modern, chic apartment in the heart of the city. Ideal for those who love urban living.",
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "garages": 1,
-      "imageUrl": "https://images.unsplash.com/photo-1498176126716-a01bc267f662?q=80&w=3062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-      "id": 3,
-      "propertyName": "Lakeside Cottage",
-      "location": "58 Lake Road, Traverse City, MI",
-      "description": "Cozy cottage right next to the lake. Perfect for weekend getaways or a quiet writer's nook.",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "garages": 1,
-      "imageUrl": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=3092&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-      "id": 4,
-      "propertyName": "Suburban Dream",
-      "location": "442 Suburbia Drive, Raleigh, NC",
-      "description": "A charming house in a friendly neighborhood. Complete with a backyard pool.",
-      "bedrooms": 4,
-      "bathrooms": 4,
-      "garages": 2,
-      "imageUrl": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-      "id": 5,
-      "propertyName": "Mountain Retreat",
-      "location": "9302 Mountain View Rd, Boulder, CO",
-      "description": "Escape to the mountains in this stunning retreat that offers panoramic views and serene solitude.",
-      "bedrooms": 5,
-      "bathrooms": 3,
-      "garages": 3,
-      "imageUrl": "https://plus.unsplash.com/premium_photo-1661876449499-26de7959878f?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-      "id": 6,
-      "propertyName": "Beachfront Bungalow",
-      "location": "100 Ocean Avenue, Miami Beach, FL",
-      "description": "Beautiful bungalow right on the beach. Wake up to the sound of waves every morning.",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "garages": 1,
-      "imageUrl": "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "propertyName": "Sunny Side Villa",
+    "location": "123 Oakwood Lane, Sunnyvale, CA",
+    "description": "A beautiful and spacious villa with a breathtaking garden view. Perfect for families looking for a peaceful retreat.",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "garages": 2,
+    "imageUrl": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=3165&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": 1500000
+  },
+  {
+    "id": 2,
+    "propertyName": "Modern Downtown Flat",
+    "location": "2347 Apartment Way, San Francisco, CA",
+    "description": "Modern, chic apartment in the heart of the city. Ideal for those who love urban living.",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "garages": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1498176126716-a01bc267f662?q=80&w=3062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": 1200000
+  },
+  {
+    "id": 3,
+    "propertyName": "Lakeside Cottage",
+    "location": "58 Lake Road, Traverse City, MI",
+    "description": "Cozy cottage right next to the lake. Perfect for weekend getaways or a quiet writer's nook.",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "garages": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=3092&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": 1800000
+  },
+  {
+    "id": 4,
+    "propertyName": "Suburban Dream",
+    "location": "442 Suburbia Drive, Raleigh, NC",
+    "description": "A charming house in a friendly neighborhood. Complete with a backyard pool.",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "garages": 2,
+    "imageUrl": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": 2000000
+  },
+  {
+    "id": 5,
+    "propertyName": "Mountain Retreat",
+    "location": "9302 Mountain View Rd, Boulder, CO",
+    "description": "Escape to the mountains in this stunning retreat that offers panoramic views and serene solitude.",
+    "bedrooms": 5,
+    "bathrooms": 3,
+    "garages": 3,
+    "imageUrl": "https://plus.unsplash.com/premium_photo-1661876449499-26de7959878f?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": 2500000
+  },
+  {
+    "id": 6,
+    "propertyName": "Beachfront Bungalow",
+    "location": "100 Ocean Avenue, Miami Beach, FL",
+    "description": "Beautiful bungalow right on the beach. Wake up to the sound of waves every morning.",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "garages": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": 1700000
+  }
+]

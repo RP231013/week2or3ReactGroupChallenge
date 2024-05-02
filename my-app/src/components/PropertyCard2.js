@@ -19,6 +19,7 @@ function PropertyCard2({ property }) {
           <li className="list-group-item">Bedrooms: {property.bedrooms}</li>
           <li className="list-group-item">Bathrooms: {property.bathrooms}</li>
           <li className="list-group-item">Garages: {property.garages}</li>
+          <li className="list-group-item">Price: R{property.price.toLocaleString()}</li>
         </ul>
         <Link to={`/property/${property.id}`} className="btn btn-primary mt-3">
   View Details
