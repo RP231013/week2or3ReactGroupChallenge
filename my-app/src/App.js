@@ -1,15 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-import NavigationBar from './components/Navbar';
-
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navigation from './components/Navigation';
+import Homepage from './components/Homepage';
+import AddPropertyPage from './components/AddPropertyPage';
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <Router>
+      <div>
+        <Navigation />
+        <Routes>
+          <Route path="/add-property" element={<AddPropertyPage />} />
+          <Route path="/" element={<Homepage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
-
-
 
 export default App;
