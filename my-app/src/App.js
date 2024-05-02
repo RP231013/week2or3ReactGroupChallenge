@@ -13,11 +13,7 @@ function App() {
         <Routes>
           <Route path="/add-property" element={<AddPropertyPage />} />
           <Route path="/" element={<Homepage />} />
-          <Route
-            path="/property-details"
-            element={<PropertyDetailsPage />}
-          />{" "}
-          {/* Add this route */}
+          <Route path="/property/:id" element={<PropertyDetailsPage />} /> {/* Updated path with parameter */}
         </Routes>
       </div>
     </Router>

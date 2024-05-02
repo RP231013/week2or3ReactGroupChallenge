@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function PropertyCard2({ property }) {
   return (
@@ -7,7 +8,7 @@ function PropertyCard2({ property }) {
         src={property.imageUrl} 
         className="card-img-top" 
         alt={`View of ${property.address}`} 
-        style={{ width: '100%', height: '200px', objectFit: 'cover' }}  // Ensures the image covers the area without distortion
+        style={{ width: '100%', height: '200px', objectFit: 'cover' }}
       />
 
       <div className="card-body">
@@ -20,7 +21,10 @@ function PropertyCard2({ property }) {
           <li className="list-group-item">Garages: {property.garages}</li>
           <li className="list-group-item">Price: R{property.price.toLocaleString()}</li>
         </ul>
-        <a href="#" className="btn btn-primary mt-3">View Details</a>
+        <Link to={`/property/${property.id}`} className="btn btn-primary mt-3">
+  View Details
+</Link>
+
       </div>
     </div>
   );
