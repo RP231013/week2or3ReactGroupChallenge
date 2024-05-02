@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-function PropertyCard({ property }) {
+function PropertyCard2({ property }) {
   // Dynamically import image based on the imageUrl property
   const image = require(`../houseStockPhotos/${property.imageUrl}`);
 
@@ -24,4 +24,4 @@ function PropertyCard({ property }) {
   );
 }
 
-export default PropertyCard;
+export default PropertyCard2;

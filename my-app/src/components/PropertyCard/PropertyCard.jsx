@@ -1,5 +1,5 @@
 import React from "react";
-import "./PropertyCard.css";
+import { Link } from "react-router-dom";
 
 function PropertyCard({
   imageUrl,
@@ -10,6 +10,7 @@ function PropertyCard({
   bathrooms,
   parkingSpaces,
   isAvailableNow,
+  property,
 }) {
   return (
     <div className="p24_listingCard p24_listingFeaturesWrapper">
@@ -38,14 +39,15 @@ function PropertyCard({
       </div>
       <div className="p24_mBM">{location}</div>
       <div className="p24_mBM">
-        <a
+        <Link
           className="p24_address js_requestStreetAddress"
-          href="#"
-          data-toggle="modal"
-          data-target="#ContactAgentModal"
+          to={{
+            pathname: "/property-details",
+            state: { property },
+          }}
         >
-          Contact agent for street address
-        </a>
+          View Details
+        </Link>
       </div>
       <div className="p24_iconsWrapper">
         <ul className="p24_icons">
