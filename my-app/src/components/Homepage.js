@@ -99,10 +99,10 @@ function Homepage() {
 
   return (
     <div className='mainContainer'>
-      <h2>Home Page</h2>
       
+      <h3></h3>
         <HeroImage />
-      <p>Welcome to Property23! Explore our property listings.</p>
+        
 
       {/* SearchBar component */}
       <SearchBar/>

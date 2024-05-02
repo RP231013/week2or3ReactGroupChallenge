@@ -17,7 +17,7 @@ export default function HeroImage() {
         <div className="mask">
           <div className="hero-container">
             <div className="hero-text-container">
-              <h1 className="mb-3">Find Property to Rent!</h1>
+              <h1 className="mb-3">Welcome to Property23! Explore our property listings.</h1>
             </div>
           </div>
         </div>
