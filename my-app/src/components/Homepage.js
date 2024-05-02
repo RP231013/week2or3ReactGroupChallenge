@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Homepage.css';
 import SearchBar from './PropertySearch';
 import PropertyCard2 from './PropertyCard2';
@@ -6,8 +6,51 @@ import DropdownMenu from './Dropdown';
 import properties from '../data.json';
 
 function Homepage() {
-  const dropdownItems1 = ["Studio", "One Bedroom", "Two Bedrooms +"];
-  const dropdownItems2 = ["Half Bath", "One Bathroom", "Two Bathrooms +"];
+  const [bedroomFilter, setBedroomFilter] = useState("");
+  const [bathroomFilter, setBathroomFilter] = useState("");
+
+  const dropdownItems1 = ["1 Bed", "2 Bed", "2 Bed +"];
+  const dropdownItems2 = ["1 Bath", "2 Bath", "2 Bath +"];
+
+  const handleBedroomFilter = (selection) => {
+    setBedroomFilter(selection);
+  };
+
+  const handleBathroomFilter = (selection) => {
+    setBathroomFilter(selection);
+  };
+
+  const filteredProperties = properties.filter(property => {
+    const bedroomCondition = bedroomFilter ? filterBedrooms(property.bedrooms, bedroomFilter) : true;
+    const bathroomCondition = bathroomFilter ? filterBathrooms(property.bathrooms, bathroomFilter) : true;
+    return bedroomCondition && bathroomCondition;
+  });
+
+  function filterBedrooms(bedrooms, filter) {
+    switch(filter) {
+      case "1 Bed":
+        return bedrooms === 1;
+      case "2 Bed":
+        return bedrooms === 2;
+      case "2 Bed +":
+        return bedrooms >= 2;
+      default:
+        return true;
+    }
+  }
+
+  function filterBathrooms(bathrooms, filter) {
+    switch(filter) {
+      case "1 Bath":
+        return bathrooms === 1;
+      case "2 Bath":
+        return bathrooms === 2;
+      case "2 Bath +":
+        return bathrooms >= 2;
+      default:
+        return true;
+    }
+  }
 
   return (
     <div className='mainContainer'>
@@ -22,11 +65,11 @@ function Homepage() {
         <div className="row justify-content-center">
           <div className="col-md-4">
             {/* First dropdown */}
-            <DropdownMenu title="Bedrooms" items={dropdownItems1} />
+            <DropdownMenu title="Bedrooms" items={dropdownItems1} onSelectItem={handleBedroomFilter} />
           </div>
           <div className="col-md-4">
             {/* Second dropdown */}
-            <DropdownMenu title="Bathrooms" items={dropdownItems2} />
+            <DropdownMenu title="Bathrooms" items={dropdownItems2} onSelectItem={handleBathroomFilter} />
           </div>
         </div>
       </div>
@@ -34,7 +77,7 @@ function Homepage() {
       <div className="container">
         <h2 className="my-4">Featured Properties</h2>
         <div className="d-flex flex-wrap justify-content-center">
-          {properties.map(property => (
+          {filteredProperties.map(property => (
             <PropertyCard2 key={property.id} property={property} />
           ))}
         </div>
