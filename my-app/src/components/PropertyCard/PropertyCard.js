@@ -51,7 +51,7 @@ function PropertyCard({
         <ul className="p24_icons">
           <li className="p24_featureDetails" title="Bedrooms">
             <img
-              src="house1.png"
+              src="/Content/images/Optimized/Icons/icon_bed_listing.svg?z=ef5d0317514d405d13cb"
               alt="Bedrooms"
               className="p24_bedroomIcon"
             />
